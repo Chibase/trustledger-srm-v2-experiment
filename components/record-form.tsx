@@ -1,12 +1,13 @@
 'use client'
 
-import { useState, type FormEvent } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
 import { X } from 'lucide-react'
 
 type Field = { key: string; label: string; placeholder: string; type?: 'text' | 'number' | 'date'; required?: boolean }
 
-export function RecordForm({ title, fields, onCancel, onSave }: { title: string; fields: Field[]; onCancel: () => void; onSave: (record: Record<string, string>) => void }) {
-  const [values, setValues] = useState<Record<string, string>>({})
+export function RecordForm({ title, fields, initialValues, onCancel, onSave }: { title: string; fields: Field[]; initialValues?: Record<string, string | number | undefined>; onCancel: () => void; onSave: (record: Record<string, string>) => void }) {
+  const [values, setValues] = useState<Record<string, string>>(() => Object.fromEntries(Object.entries(initialValues ?? {}).map(([key, value]) => [key, String(value)])))
+  useEffect(() => { setValues(Object.fromEntries(Object.entries(initialValues ?? {}).map(([key, value]) => [key, String(value)]))) }, [initialValues])
   const [error, setError] = useState('')
   function submit(event: FormEvent) {
     event.preventDefault()
