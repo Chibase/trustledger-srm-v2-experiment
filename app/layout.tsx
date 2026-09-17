@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'TrustLedger SRM | V2 Experimental Build',
+  description: 'Stakeholder Relations Management for infrastructure and community-facing programmes.',
   generator: 'v0.app',
   icons: {
     icon: [
