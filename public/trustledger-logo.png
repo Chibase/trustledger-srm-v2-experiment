@@ -1,0 +1,34 @@
+Use the TrustLedger logo image I have provided as the official TrustLedger SRM brand logo.
+
+Apply this logo consistently throughout the application:
+
+1. Sign-in page
+- Replace the temporary shield/icon with the supplied TrustLedger logo.
+- Use the logo prominently on the branded left panel.
+- Preserve the logo's original proportions.
+- Do not redraw, recreate, stylise, or replace the logo.
+
+2. Application shell
+- Use the supplied logo in the main navigation/header.
+- Use an appropriately sized version for the sidebar/header.
+- Maintain clear spacing around the logo.
+
+3. Browser/application branding
+- Use the supplied logo as the application favicon where technically appropriate.
+- Update metadata/title from the generic v0 branding to:
+  TrustLedger SRM
+- Remove generic "v0 App" and "Created with v0" branding.
+
+4. Brand consistency
+- Use the colours and visual character of the supplied logo as the reference for the TrustLedger SRM interface.
+- Keep the existing professional TrustLedger visual direction.
+- Do not alter the logo artwork itself.
+
+IMPORTANT:
+- The supplied logo is the official TrustLedger SRM logo.
+- Do not generate a replacement logo.
+- Do not use a generic icon in its place.
+- Do not modify the logo artwork.
+- Make the logo asset reusable from a central location rather than duplicating it throughout the codebase.
+
+After implementing this, verify that the logo appears correctly on the sign-in page and authenticated application shell, and confirm which file/path is being used for the logo asset.
